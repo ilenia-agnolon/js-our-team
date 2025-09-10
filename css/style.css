@@ -44,6 +44,7 @@ p {
 .row {
     display: flex;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .col {
@@ -80,6 +81,14 @@ a {
     color: lightskyblue;
 }
 
+
+/* breakpoint medio */
+ @media screen and (max-width:992px) {
+     .col {
+    width: calc(100% / 2 - 10px); /* 2 colonne */
+  }
+
+ }
 
 /* tablet */
  @media screen and (max-width:768px) {
