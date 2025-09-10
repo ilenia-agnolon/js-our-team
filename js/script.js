@@ -62,26 +62,25 @@ for (let index = 0; index < teamMembers.length; index++) {
     //b. per ogni oggetto creo una card (stringa) e la aggiungo alla var di accumulo
     cards += `
      <div class="row">
-                <!-- card team member (da generare via js) -->
-                <div class="col">
-                    <div class="card">
-                        <div class="card-img"><img src="img/male1.png" alt="marco designer"></div>
+        <div class="col">
+          <div class="card">
+           <div class="card-img">
+            <img src="img/${singleMember.img}" alt="${singleMember.name}"></div>
                         
-                        <div class="card-content">
-                            <h3>Marco Bianchi</h3>
-                            <span>Designer</span>
+              <div class="card-content">
+                            <h3>${singleMember.name}</h3>
+                            <span>${singleMember.role}</span>
                             <a href="mailto:marcorovero@team.com">marcobianchi@team.com</a>
                         </div>
                     </div>
                 </div>
              
-            </div>`;
-
- 
- 
-    
+            </div>`;    
   
 }
+
+//output del blocco card
+cardContainer.innerHTML = cards;
 
 
 
