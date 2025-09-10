@@ -42,8 +42,19 @@ const teamMembers = [
 Consegna:
   Dato un array di oggetti rappresentante un team di un’azienda, creare una pagina dedicata in cui mostrare una card per ciascun componente.
 */
+console.log("tutti", teamMembers);
 
-//selezioniamo il container delle card
+
+//1.selezioniamo il container delle card
 const cardContainer = document.querySelector(".row")
 
+//2.ciclo l'array degli oggetti (teamMembers)
+for (let index = 0; index < teamMembers.length; index++) {
+  const singleMember = teamMembers[index]; // -> con questo ciclo sto leggendo e memorizzando ogni membro, così sono pronto poi a farci qualcosa (in questo caso: generare le card)
+
+ 
+  console.log("membro singolo del team", singleMember);
+    
+  
+}
 
