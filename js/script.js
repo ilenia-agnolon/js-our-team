@@ -71,7 +71,7 @@ for (let index = 0; index < teamMembers.length; index++) {
                 <div class="card-content">
                             <h3>${singleMember.name}</h3>
                             <span>${singleMember.role}</span>
-                            <a href="mailto:marcorovero@team.com">${singleMember.email}</a>
+                            <a href="mailto:${singleMember.email}">${singleMember.email}</a>
                 </div>
             </div>
           </div>
