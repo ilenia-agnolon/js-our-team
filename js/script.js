@@ -48,7 +48,10 @@ console.log("tutti", teamMembers);
 //1.selezioniamo il container delle card
 const cardContainer = document.querySelector(".row")
 
-//2.ciclo l'array degli oggetti (teamMembers)
+//2. creo variabile di accumulo output (stringhe)
+let cards = "";
+
+//3. ciclo l'array degli oggetti (teamMembers)
 for (let index = 0; index < teamMembers.length; index++) {
   const singleMember = teamMembers[index]; // -> con questo ciclo sto leggendo e memorizzando ogni membro, così sono pronto poi a farci qualcosa (in questo caso: generare le card)
 
@@ -57,4 +60,6 @@ for (let index = 0; index < teamMembers.length; index++) {
     
   
 }
+
+
 
