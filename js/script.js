@@ -43,4 +43,7 @@ Consegna:
   Dato un array di oggetti rappresentante un team di un’azienda, creare una pagina dedicata in cui mostrare una card per ciascun componente.
 */
 
+//selezioniamo il container delle card
+const cardContainer = document.querySelector(".row")
+
 
