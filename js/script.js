@@ -65,7 +65,7 @@ for (let index = 0; index < teamMembers.length; index++) {
             <div class="card">
 
             <div class="card-img">
-              <img src="img/${singleMember.img}" alt="${singleMember.name}">
+              <img src="${singleMember.img}" alt="${singleMember.name}">
             </div>
                           
                 <div class="card-content">
@@ -76,11 +76,18 @@ for (let index = 0; index < teamMembers.length; index++) {
             </div>
           </div>
           `;    
+
+         console.log("iterazione sull'oggetto numero:", index, cards); //-> stampo in console lo stato del ciclo ad ogni giro
+          
     
   }
 
           //c. output del blocco card
-          cardContainer.innerHTML = cards;
+          cardContainer.innerHTML = cards; 
+
+
+
+
 
 
 
