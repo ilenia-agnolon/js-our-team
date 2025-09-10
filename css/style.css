@@ -6,10 +6,19 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Comfortaa", sans-serif;
     font-size: 12px;
 }
 
+/* font 
+
+.comfortaa-<uniquifier> {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+  */
 
 /* regole contenuto main */
 main {
@@ -28,16 +37,21 @@ h1 {
     margin-bottom: 20px;
 }
 
+p {
+    text-align: center;
+}
+
 .row {
     display: flex;
   flex-wrap: wrap;
-  gap: 10px;
 }
 
 .col {
   width: calc((100% / 3) - (20px / 3));
   min-height: 150px;
-  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -61,7 +75,21 @@ h1 {
     justify-content: space-around;
 }
 
-.card-content h3 {
-    font-size: 20px;
+a {
+    text-decoration: none;
+    color: lightskyblue;
 }
 
+
+/* tablet */
+ @media screen and (max-width:768px) {
+
+    .main-container {
+        width: 70%;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+ }
