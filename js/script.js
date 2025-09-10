@@ -59,28 +59,28 @@ for (let index = 0; index < teamMembers.length; index++) {
     const singleMember = teamMembers[index];
     console.log("membro singolo del team", singleMember);
 
-    //b. per ogni oggetto creo una card (stringa) e la aggiungo alla var di accumulo
-    cards += `
-     <div class="row">
-        <div class="col">
-          <div class="card">
-           <div class="card-img">
-            <img src="img/${singleMember.img}" alt="${singleMember.name}"></div>
-                        
-              <div class="card-content">
+      //b. per ogni oggetto creo una card (stringa) e la aggiungo alla var di accumulo
+      cards += `
+          <div class="col">
+            <div class="card">
+
+            <div class="card-img">
+              <img src="img/${singleMember.img}" alt="${singleMember.name}">
+            </div>
+                          
+                <div class="card-content">
                             <h3>${singleMember.name}</h3>
                             <span>${singleMember.role}</span>
-                            <a href="mailto:marcorovero@team.com">marcobianchi@team.com</a>
-                        </div>
-                    </div>
+                            <a href="mailto:marcorovero@team.com">${singleMember.email}</a>
                 </div>
-             
-            </div>`;    
-  
-}
+            </div>
+          </div>
+          `;    
+    
+  }
 
-//output del blocco card
-cardContainer.innerHTML = cards;
+          //c. output del blocco card
+          cardContainer.innerHTML = cards;
 
 
 
