@@ -53,10 +53,32 @@ let cards = "";
 
 //3. ciclo l'array degli oggetti (teamMembers)
 for (let index = 0; index < teamMembers.length; index++) {
-  const singleMember = teamMembers[index]; // -> con questo ciclo sto leggendo e memorizzando ogni membro, così sono pronto poi a farci qualcosa (in questo caso: generare le card)
+   // -> con questo ciclo sto leggendo e memorizzando ogni membro, così sono pronto poi a farci qualcosa (in questo caso: generare le card)
+
+    //a. estrapolo ogni oggetto
+    const singleMember = teamMembers[index];
+    console.log("membro singolo del team", singleMember);
+
+    //b. per ogni oggetto creo una card (stringa) e la aggiungo alla var di accumulo
+    cards += `
+     <div class="row">
+                <!-- card team member (da generare via js) -->
+                <div class="col">
+                    <div class="card">
+                        <div class="card-img"><img src="img/male1.png" alt="marco designer"></div>
+                        
+                        <div class="card-content">
+                            <h3>Marco Bianchi</h3>
+                            <span>Designer</span>
+                            <a href="mailto:marcorovero@team.com">marcobianchi@team.com</a>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>`;
 
  
-  console.log("membro singolo del team", singleMember);
+ 
     
   
 }
